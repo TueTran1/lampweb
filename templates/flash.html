@@ -10,18 +10,18 @@
 
 <body>
     <div class="content">
-        <img src="{{ url_for('static', filename = '/img/lamp-on.png') }}" id="yellowlamp" />
-        <img src="{{ url_for('static', filename = '/img/lamp-on_blue.png') }}" id="bluelamp" />
+        <img src="{{ url_for('static', filename = '/img/234402441animated-light-bulb-gif-29.gif') }}" id="bluelamp" />
+        <img src="{{ url_for('static', filename = '/img/234402441animated-light-bulb-gif-29.gif') }}" id="yellowlamp" />
         <form action="/turnON" method = "post">
             <main>
-                <input class="l" type="checkbox" onclick="submit()" id="mylamp" name="checkyel" checked>
+                <input class="l" type="checkbox" onclick="submit()" id="mylamp" name="checkyel" >
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </main>
             <main>
-                <input class="l" type="checkbox" onclick="submit()" id="mylamp1" name="checkblue" checked>
+                <input class="l" type="checkbox" onclick="submit()" id="mylamp1" name="checkblue" >
             </main>
             <main>
-                <input class="l" type="checkbox" onclick="submit()" id="nn" name="nn"></input>
+                <input class="l" type="checkbox" onclick="submit()" id="nn" name="nn" checked>
             </main>
         </form>
     </div>
