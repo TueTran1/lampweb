@@ -46,6 +46,22 @@ def turnON():
         #     GPIO.output(18,False)
         #     time.sleep(0.5)
         return render_template('flash.html')
+    if checknn == 'on' and checkyel is None and checkblue is None:
+        # GPIO.output(17, GPIO.LOW)
+        # GPIO.output(18, GPIO.LOW)    
+        return  render_template('index.html')
+    if checknn == 'on' and checkyel is None and checkblue =='on':
+        # GPIO.output(17, GPIO.LOW)
+        # GPIO.output(18, GPIO.LOW)
+        return  render_template('index.html')
+    if checknn == 'on' and checkyel =='on' and checkblue is None:
+        # GPIO.output(17, GPIO.LOW)
+        # GPIO.output(18, GPIO.LOW)
+        return  render_template('index.html')
+    if checknn == 'on' and checkyel =='on' and checkblue =='on':
+        # GPIO.output(17, GPIO.LOW)
+        # GPIO.output(18, GPIO.LOW)
+        return  render_template('index.html')
     else:
         # GPIO.output(17, GPIO.LOW)
         # GPIO.output(18, GPIO.LOW)
