@@ -124,3 +124,8 @@ form.main {
 	opacity: 1;
 	transition: 0s
   }
+div.c {
+	font-size: 60%;
+	display: inline-block;
+	font-family: 'Courier New', Courier, monospace;
+}

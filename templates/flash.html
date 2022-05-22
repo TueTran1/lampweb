@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
     <title>Lampada</title>
+    <script>
+        function autoRefresh() {
+            window.location = "http://127.0.0.1:5000/turnNN?checknn=on";
+        }
+        setInterval('autoRefresh()', 5000);
+    </script>
 </head>
 
 <body>
@@ -21,7 +27,7 @@
                 <input class="l" type="checkbox" onclick="submit()" id="mylamp1" name="checkblue" >
             </main>
             <main>
-                <input class="l" type="checkbox" onclick="submit()" id="nn" name="nn" checked>
+                <input class="l" type="checkbox" onclick="submit()" id="nn" name="nn" checked><div class="c">nhấp nháy</div>
             </main>
         </form>
     </div>

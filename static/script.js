@@ -2,6 +2,7 @@ var imgLamp = document.getElementById('yellowlamp');
 var imgLamp2 = document.getElementById('bluelamp');
 
 
+
 function turnOnYellow(){
     var checkbox = document.getElementById('mylamp')
     if (checkbox.checked == true){
